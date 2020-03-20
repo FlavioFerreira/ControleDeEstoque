@@ -65,7 +65,20 @@ namespace DAL
         {
             ModeloCategoria modelo = new ModeloCategoria();
             SqlCommand cmd = new SqlCommand();
+            cmd.Connection = conexao.ObjetoConexao;
+            cmd.CommandText = "select * from categoria where cat_cod = @codigo";
+            cmd.Parameters.AddWithValue("@codigo", codigo);
+            conexao.Conectar();
+            SqlDataReader registro = cmd.ExecuteReader();
+            if (registro.HasRows)
+            {
+                registro.Read();
+                modelo.Cat_cod = Convert.ToInt32(registro["cat_cod"]);
+                modelo.Cat_nome = Convert.ToString(registro["cat_nome"]);
 
+            }
+            conexao.Desconectar();
+            return modelo;
         }
     }
 }
