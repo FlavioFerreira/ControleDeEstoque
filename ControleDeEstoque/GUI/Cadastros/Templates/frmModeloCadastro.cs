@@ -16,5 +16,20 @@ namespace GUI.Cadastros.Templates
         {
             InitializeComponent();
         }
+
+        private void btLocalizar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btAlterar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btSalvar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

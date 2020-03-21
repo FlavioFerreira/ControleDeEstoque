@@ -28,19 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmModeloCadastro));
             this.pnDados = new System.Windows.Forms.Panel();
             this.pnBotoes = new System.Windows.Forms.Panel();
-            this.btInserir = new System.Windows.Forms.Button();
-            this.btLocalizar = new System.Windows.Forms.Button();
-            this.btAlterar = new System.Windows.Forms.Button();
-            this.btExcluir = new System.Windows.Forms.Button();
-            this.btSalvar = new System.Windows.Forms.Button();
             this.btCancelar = new System.Windows.Forms.Button();
+            this.btSalvar = new System.Windows.Forms.Button();
+            this.btExcluir = new System.Windows.Forms.Button();
+            this.btAlterar = new System.Windows.Forms.Button();
+            this.btLocalizar = new System.Windows.Forms.Button();
+            this.btInserir = new System.Windows.Forms.Button();
             this.pnBotoes.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnDados
             // 
+            this.pnDados.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnDados.Location = new System.Drawing.Point(1, 12);
             this.pnDados.Name = "pnDados";
             this.pnDados.Size = new System.Drawing.Size(771, 445);
@@ -48,6 +50,7 @@
             // 
             // pnBotoes
             // 
+            this.pnBotoes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnBotoes.Controls.Add(this.btCancelar);
             this.pnBotoes.Controls.Add(this.btSalvar);
             this.pnBotoes.Controls.Add(this.btExcluir);
@@ -59,59 +62,80 @@
             this.pnBotoes.Size = new System.Drawing.Size(771, 87);
             this.pnBotoes.TabIndex = 1;
             // 
-            // btInserir
+            // btCancelar
             // 
-            this.btInserir.Location = new System.Drawing.Point(28, 19);
-            this.btInserir.Name = "btInserir";
-            this.btInserir.Size = new System.Drawing.Size(75, 23);
-            this.btInserir.TabIndex = 0;
-            this.btInserir.Text = "Inserir";
-            this.btInserir.UseVisualStyleBackColor = true;
-            // 
-            // btLocalizar
-            // 
-            this.btLocalizar.Location = new System.Drawing.Point(122, 19);
-            this.btLocalizar.Name = "btLocalizar";
-            this.btLocalizar.Size = new System.Drawing.Size(75, 23);
-            this.btLocalizar.TabIndex = 1;
-            this.btLocalizar.Text = "Localizar";
-            this.btLocalizar.UseVisualStyleBackColor = true;
-            // 
-            // btAlterar
-            // 
-            this.btAlterar.Location = new System.Drawing.Point(215, 19);
-            this.btAlterar.Name = "btAlterar";
-            this.btAlterar.Size = new System.Drawing.Size(75, 23);
-            this.btAlterar.TabIndex = 2;
-            this.btAlterar.Text = "Alterar";
-            this.btAlterar.UseVisualStyleBackColor = true;
-            // 
-            // btExcluir
-            // 
-            this.btExcluir.Location = new System.Drawing.Point(309, 18);
-            this.btExcluir.Name = "btExcluir";
-            this.btExcluir.Size = new System.Drawing.Size(75, 23);
-            this.btExcluir.TabIndex = 3;
-            this.btExcluir.Text = "Excluir";
-            this.btExcluir.UseVisualStyleBackColor = true;
+            this.btCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btCancelar.Image")));
+            this.btCancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btCancelar.Location = new System.Drawing.Point(697, 12);
+            this.btCancelar.Name = "btCancelar";
+            this.btCancelar.Size = new System.Drawing.Size(60, 60);
+            this.btCancelar.TabIndex = 5;
+            this.btCancelar.Text = "Cancelar";
+            this.btCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btCancelar.UseVisualStyleBackColor = true;
             // 
             // btSalvar
             // 
-            this.btSalvar.Location = new System.Drawing.Point(401, 19);
+            this.btSalvar.Image = ((System.Drawing.Image)(resources.GetObject("btSalvar.Image")));
+            this.btSalvar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btSalvar.Location = new System.Drawing.Point(631, 12);
             this.btSalvar.Name = "btSalvar";
-            this.btSalvar.Size = new System.Drawing.Size(75, 23);
+            this.btSalvar.Size = new System.Drawing.Size(60, 60);
             this.btSalvar.TabIndex = 4;
             this.btSalvar.Text = "Salvar";
+            this.btSalvar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btSalvar.UseVisualStyleBackColor = true;
+            this.btSalvar.Click += new System.EventHandler(this.btSalvar_Click);
             // 
-            // btCancelar
+            // btExcluir
             // 
-            this.btCancelar.Location = new System.Drawing.Point(503, 18);
-            this.btCancelar.Name = "btCancelar";
-            this.btCancelar.Size = new System.Drawing.Size(75, 23);
-            this.btCancelar.TabIndex = 5;
-            this.btCancelar.Text = "Cancelar";
-            this.btCancelar.UseVisualStyleBackColor = true;
+            this.btExcluir.Image = ((System.Drawing.Image)(resources.GetObject("btExcluir.Image")));
+            this.btExcluir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btExcluir.Location = new System.Drawing.Point(252, 12);
+            this.btExcluir.Name = "btExcluir";
+            this.btExcluir.Size = new System.Drawing.Size(60, 60);
+            this.btExcluir.TabIndex = 3;
+            this.btExcluir.Text = "Excluir";
+            this.btExcluir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btExcluir.UseVisualStyleBackColor = true;
+            // 
+            // btAlterar
+            // 
+            this.btAlterar.Image = ((System.Drawing.Image)(resources.GetObject("btAlterar.Image")));
+            this.btAlterar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btAlterar.Location = new System.Drawing.Point(173, 12);
+            this.btAlterar.Name = "btAlterar";
+            this.btAlterar.Size = new System.Drawing.Size(60, 60);
+            this.btAlterar.TabIndex = 2;
+            this.btAlterar.Text = "Alterar";
+            this.btAlterar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btAlterar.UseVisualStyleBackColor = true;
+            this.btAlterar.Click += new System.EventHandler(this.btAlterar_Click);
+            // 
+            // btLocalizar
+            // 
+            this.btLocalizar.Image = ((System.Drawing.Image)(resources.GetObject("btLocalizar.Image")));
+            this.btLocalizar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btLocalizar.Location = new System.Drawing.Point(92, 12);
+            this.btLocalizar.Name = "btLocalizar";
+            this.btLocalizar.Size = new System.Drawing.Size(60, 60);
+            this.btLocalizar.TabIndex = 1;
+            this.btLocalizar.Text = "Localizar";
+            this.btLocalizar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btLocalizar.UseVisualStyleBackColor = true;
+            this.btLocalizar.Click += new System.EventHandler(this.btLocalizar_Click);
+            // 
+            // btInserir
+            // 
+            this.btInserir.Image = ((System.Drawing.Image)(resources.GetObject("btInserir.Image")));
+            this.btInserir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btInserir.Location = new System.Drawing.Point(11, 12);
+            this.btInserir.Name = "btInserir";
+            this.btInserir.Size = new System.Drawing.Size(60, 60);
+            this.btInserir.TabIndex = 0;
+            this.btInserir.Text = "Inserir";
+            this.btInserir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btInserir.UseVisualStyleBackColor = true;
             // 
             // frmModeloCadastro
             // 
