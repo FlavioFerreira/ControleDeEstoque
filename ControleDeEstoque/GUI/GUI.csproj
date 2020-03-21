@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cadastros\Templates\frmModeloCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Templates\frmModeloCadastro.Designer.cs">
+      <DependentUpon>frmModeloCadastro.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +63,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Cadastros\Templates\frmModeloCadastro.resx">
+      <DependentUpon>frmModeloCadastro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
