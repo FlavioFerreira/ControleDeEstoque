@@ -31,5 +31,10 @@ namespace GUI.Cadastros.Templates
         {
 
         }
+
+        private void btExcluir_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
