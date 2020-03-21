@@ -61,7 +61,7 @@
             this.ribbon1.OrbDropDown.Size = new System.Drawing.Size(527, 447);
             this.ribbon1.OrbDropDown.TabIndex = 0;
             this.ribbon1.RibbonTabFont = new System.Drawing.Font("Trebuchet MS", 9F);
-            this.ribbon1.Size = new System.Drawing.Size(784, 158);
+            this.ribbon1.Size = new System.Drawing.Size(784, 191);
             this.ribbon1.TabIndex = 0;
             this.ribbon1.Tabs.Add(this.abaCadastros);
             this.ribbon1.Tabs.Add(this.abaConsultas);
