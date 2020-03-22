@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cadastros\Categoria\frmCadastroCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Categoria\frmCadastroCategoria.Designer.cs">
+      <DependentUpon>frmCadastroCategoria.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cadastros\Templates\frmModeloCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,7 +114,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Cadastros\Categoria\" />
     <Folder Include="Cadastros\Subcategoria\" />
   </ItemGroup>
   <ItemGroup>

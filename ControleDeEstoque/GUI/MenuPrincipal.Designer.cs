@@ -33,17 +33,17 @@
             this.abaCadastros = new System.Windows.Forms.RibbonTab();
             this.ribbonPanel1 = new System.Windows.Forms.RibbonPanel();
             this.btnCategoria = new System.Windows.Forms.RibbonButton();
-            this.abaConsultas = new System.Windows.Forms.RibbonTab();
-            this.abaMovimentacao = new System.Windows.Forms.RibbonTab();
-            this.abaRelatorios = new System.Windows.Forms.RibbonTab();
-            this.abaFerramentas = new System.Windows.Forms.RibbonTab();
-            this.abaSobre = new System.Windows.Forms.RibbonTab();
             this.btnSubcategoria = new System.Windows.Forms.RibbonButton();
             this.btnUnidadeMedida = new System.Windows.Forms.RibbonButton();
             this.btnProdutos = new System.Windows.Forms.RibbonButton();
             this.ribbonPanel2 = new System.Windows.Forms.RibbonPanel();
             this.btnClientes = new System.Windows.Forms.RibbonButton();
             this.btnFornecedores = new System.Windows.Forms.RibbonButton();
+            this.abaConsultas = new System.Windows.Forms.RibbonTab();
+            this.abaMovimentacao = new System.Windows.Forms.RibbonTab();
+            this.abaRelatorios = new System.Windows.Forms.RibbonTab();
+            this.abaFerramentas = new System.Windows.Forms.RibbonTab();
+            this.abaSobre = new System.Windows.Forms.RibbonTab();
             this.SuspendLayout();
             // 
             // ribbon1
@@ -94,31 +94,7 @@
             this.btnCategoria.Name = "btnCategoria";
             this.btnCategoria.SmallImage = ((System.Drawing.Image)(resources.GetObject("btnCategoria.SmallImage")));
             this.btnCategoria.Text = "Categorias";
-            // 
-            // abaConsultas
-            // 
-            this.abaConsultas.Name = "abaConsultas";
-            this.abaConsultas.Text = "Consultas";
-            // 
-            // abaMovimentacao
-            // 
-            this.abaMovimentacao.Name = "abaMovimentacao";
-            this.abaMovimentacao.Text = "Movimentação";
-            // 
-            // abaRelatorios
-            // 
-            this.abaRelatorios.Name = "abaRelatorios";
-            this.abaRelatorios.Text = "Relatórios";
-            // 
-            // abaFerramentas
-            // 
-            this.abaFerramentas.Name = "abaFerramentas";
-            this.abaFerramentas.Text = "Ferramentas";
-            // 
-            // abaSobre
-            // 
-            this.abaSobre.Name = "abaSobre";
-            this.abaSobre.Text = "Sobre";
+            this.btnCategoria.Click += new System.EventHandler(this.btnCategoria_Click);
             // 
             // btnSubcategoria
             // 
@@ -166,6 +142,31 @@
             this.btnFornecedores.Name = "btnFornecedores";
             this.btnFornecedores.SmallImage = ((System.Drawing.Image)(resources.GetObject("btnFornecedores.SmallImage")));
             this.btnFornecedores.Text = "Fornecedores";
+            // 
+            // abaConsultas
+            // 
+            this.abaConsultas.Name = "abaConsultas";
+            this.abaConsultas.Text = "Consultas";
+            // 
+            // abaMovimentacao
+            // 
+            this.abaMovimentacao.Name = "abaMovimentacao";
+            this.abaMovimentacao.Text = "Movimentação";
+            // 
+            // abaRelatorios
+            // 
+            this.abaRelatorios.Name = "abaRelatorios";
+            this.abaRelatorios.Text = "Relatórios";
+            // 
+            // abaFerramentas
+            // 
+            this.abaFerramentas.Name = "abaFerramentas";
+            this.abaFerramentas.Text = "Ferramentas";
+            // 
+            // abaSobre
+            // 
+            this.abaSobre.Name = "abaSobre";
+            this.abaSobre.Text = "Sobre";
             // 
             // MenuPrincipal
             // 
