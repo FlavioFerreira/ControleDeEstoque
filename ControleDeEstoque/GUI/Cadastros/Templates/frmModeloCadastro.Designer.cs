@@ -43,9 +43,9 @@
             // pnDados
             // 
             this.pnDados.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnDados.Location = new System.Drawing.Point(1, 12);
+            this.pnDados.Location = new System.Drawing.Point(13, 12);
             this.pnDados.Name = "pnDados";
-            this.pnDados.Size = new System.Drawing.Size(771, 445);
+            this.pnDados.Size = new System.Drawing.Size(759, 445);
             this.pnDados.TabIndex = 0;
             this.pnDados.Paint += new System.Windows.Forms.PaintEventHandler(this.pnDados_Paint);
             // 
@@ -58,9 +58,9 @@
             this.pnBotoes.Controls.Add(this.btnAlterar);
             this.pnBotoes.Controls.Add(this.btnLocalizar);
             this.pnBotoes.Controls.Add(this.btnInserir);
-            this.pnBotoes.Location = new System.Drawing.Point(1, 463);
+            this.pnBotoes.Location = new System.Drawing.Point(12, 463);
             this.pnBotoes.Name = "pnBotoes";
-            this.pnBotoes.Size = new System.Drawing.Size(771, 87);
+            this.pnBotoes.Size = new System.Drawing.Size(760, 87);
             this.pnBotoes.TabIndex = 1;
             // 
             // btnCancelar
@@ -68,7 +68,7 @@
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnCancelar.Location = new System.Drawing.Point(689, 12);
+            this.btnCancelar.Location = new System.Drawing.Point(680, 12);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(68, 68);
             this.btnCancelar.TabIndex = 5;
@@ -95,7 +95,7 @@
             this.btnExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluir.Image")));
             this.btnExcluir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnExcluir.Location = new System.Drawing.Point(251, 12);
+            this.btnExcluir.Location = new System.Drawing.Point(233, 12);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(68, 68);
             this.btnExcluir.TabIndex = 3;
@@ -109,7 +109,7 @@
             this.btnAlterar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAlterar.Image = ((System.Drawing.Image)(resources.GetObject("btnAlterar.Image")));
             this.btnAlterar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnAlterar.Location = new System.Drawing.Point(168, 12);
+            this.btnAlterar.Location = new System.Drawing.Point(159, 12);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(68, 68);
             this.btnAlterar.TabIndex = 2;
@@ -123,7 +123,7 @@
             this.btnLocalizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLocalizar.Image = ((System.Drawing.Image)(resources.GetObject("btnLocalizar.Image")));
             this.btnLocalizar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnLocalizar.Location = new System.Drawing.Point(94, 12);
+            this.btnLocalizar.Location = new System.Drawing.Point(85, 12);
             this.btnLocalizar.Name = "btnLocalizar";
             this.btnLocalizar.Size = new System.Drawing.Size(68, 68);
             this.btnLocalizar.TabIndex = 1;
@@ -155,6 +155,7 @@
             this.Name = "frmModeloCadastro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Modelo de Cadastro";
+            this.Load += new System.EventHandler(this.frmModeloCadastro_Load);
             this.pnBotoes.ResumeLayout(false);
             this.ResumeLayout(false);
 

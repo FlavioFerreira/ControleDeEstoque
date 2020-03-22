@@ -28,7 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.pnBotoes.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // pnDados
+            // 
+            this.pnDados.Location = new System.Drawing.Point(12, 12);
+            this.pnDados.Size = new System.Drawing.Size(758, 445);
+            // 
+            // pnBotoes
+            // 
+            this.pnBotoes.Location = new System.Drawing.Point(12, 463);
+            this.pnBotoes.Size = new System.Drawing.Size(758, 87);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Location = new System.Drawing.Point(680, 12);
+            // 
+            // frmCadastroCategoria
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.ClientSize = new System.Drawing.Size(784, 562);
+            this.Name = "frmCadastroCategoria";
+            this.pnBotoes.ResumeLayout(false);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

@@ -74,5 +74,10 @@ namespace GUI.Cadastros.Templates
         {
 
         }
+
+        private void frmModeloCadastro_Load(object sender, EventArgs e)
+        {
+            this.alteraBotoes(1);
+        }
     }
 }
