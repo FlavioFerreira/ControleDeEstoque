@@ -12,7 +12,7 @@ namespace DAL
         {
             get
             {
-                return "Data Source=FLAVIO-PC\\SQLEXPRESS;Initial Catalog=ControleDeEstoque;User ID=sa";
+                return "Data Source=FLAVIO-PC\\SQLEXPRESS;Initial Catalog=ControleDeEstoque;User ID=sa; Password=123456";
             }
         }
     }
