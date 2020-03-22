@@ -31,12 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmModeloCadastro));
             this.pnDados = new System.Windows.Forms.Panel();
             this.pnBotoes = new System.Windows.Forms.Panel();
-            this.btCancelar = new System.Windows.Forms.Button();
-            this.btSalvar = new System.Windows.Forms.Button();
-            this.btExcluir = new System.Windows.Forms.Button();
-            this.btAlterar = new System.Windows.Forms.Button();
-            this.btLocalizar = new System.Windows.Forms.Button();
-            this.btInserir = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnSalvar = new System.Windows.Forms.Button();
+            this.btnExcluir = new System.Windows.Forms.Button();
+            this.btnAlterar = new System.Windows.Forms.Button();
+            this.btnLocalizar = new System.Windows.Forms.Button();
+            this.btnInserir = new System.Windows.Forms.Button();
             this.pnBotoes.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,102 +47,103 @@
             this.pnDados.Name = "pnDados";
             this.pnDados.Size = new System.Drawing.Size(771, 445);
             this.pnDados.TabIndex = 0;
+            this.pnDados.Paint += new System.Windows.Forms.PaintEventHandler(this.pnDados_Paint);
             // 
             // pnBotoes
             // 
             this.pnBotoes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnBotoes.Controls.Add(this.btCancelar);
-            this.pnBotoes.Controls.Add(this.btSalvar);
-            this.pnBotoes.Controls.Add(this.btExcluir);
-            this.pnBotoes.Controls.Add(this.btAlterar);
-            this.pnBotoes.Controls.Add(this.btLocalizar);
-            this.pnBotoes.Controls.Add(this.btInserir);
+            this.pnBotoes.Controls.Add(this.btnCancelar);
+            this.pnBotoes.Controls.Add(this.btnSalvar);
+            this.pnBotoes.Controls.Add(this.btnExcluir);
+            this.pnBotoes.Controls.Add(this.btnAlterar);
+            this.pnBotoes.Controls.Add(this.btnLocalizar);
+            this.pnBotoes.Controls.Add(this.btnInserir);
             this.pnBotoes.Location = new System.Drawing.Point(1, 463);
             this.pnBotoes.Name = "pnBotoes";
             this.pnBotoes.Size = new System.Drawing.Size(771, 87);
             this.pnBotoes.TabIndex = 1;
             // 
-            // btCancelar
+            // btnCancelar
             // 
-            this.btCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btCancelar.Image")));
-            this.btCancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btCancelar.Location = new System.Drawing.Point(689, 12);
-            this.btCancelar.Name = "btCancelar";
-            this.btCancelar.Size = new System.Drawing.Size(68, 68);
-            this.btCancelar.TabIndex = 5;
-            this.btCancelar.Text = "Cancelar";
-            this.btCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
+            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnCancelar.Location = new System.Drawing.Point(689, 12);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(68, 68);
+            this.btnCancelar.TabIndex = 5;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnCancelar.UseVisualStyleBackColor = true;
             // 
-            // btSalvar
+            // btnSalvar
             // 
-            this.btSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSalvar.Image = ((System.Drawing.Image)(resources.GetObject("btSalvar.Image")));
-            this.btSalvar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btSalvar.Location = new System.Drawing.Point(606, 12);
-            this.btSalvar.Name = "btSalvar";
-            this.btSalvar.Size = new System.Drawing.Size(68, 68);
-            this.btSalvar.TabIndex = 4;
-            this.btSalvar.Text = "Salvar";
-            this.btSalvar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btSalvar.UseVisualStyleBackColor = true;
-            this.btSalvar.Click += new System.EventHandler(this.btSalvar_Click);
+            this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvar.Image = ((System.Drawing.Image)(resources.GetObject("btnSalvar.Image")));
+            this.btnSalvar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnSalvar.Location = new System.Drawing.Point(606, 12);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(68, 68);
+            this.btnSalvar.TabIndex = 4;
+            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
-            // btExcluir
+            // btnExcluir
             // 
-            this.btExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btExcluir.Image = ((System.Drawing.Image)(resources.GetObject("btExcluir.Image")));
-            this.btExcluir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btExcluir.Location = new System.Drawing.Point(251, 12);
-            this.btExcluir.Name = "btExcluir";
-            this.btExcluir.Size = new System.Drawing.Size(68, 68);
-            this.btExcluir.TabIndex = 3;
-            this.btExcluir.Text = "Excluir";
-            this.btExcluir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btExcluir.UseVisualStyleBackColor = true;
-            this.btExcluir.Click += new System.EventHandler(this.btExcluir_Click);
+            this.btnExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluir.Image")));
+            this.btnExcluir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnExcluir.Location = new System.Drawing.Point(251, 12);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(68, 68);
+            this.btnExcluir.TabIndex = 3;
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
-            // btAlterar
+            // btnAlterar
             // 
-            this.btAlterar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btAlterar.Image = ((System.Drawing.Image)(resources.GetObject("btAlterar.Image")));
-            this.btAlterar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btAlterar.Location = new System.Drawing.Point(168, 12);
-            this.btAlterar.Name = "btAlterar";
-            this.btAlterar.Size = new System.Drawing.Size(68, 68);
-            this.btAlterar.TabIndex = 2;
-            this.btAlterar.Text = "Alterar";
-            this.btAlterar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btAlterar.UseVisualStyleBackColor = true;
-            this.btAlterar.Click += new System.EventHandler(this.btAlterar_Click);
+            this.btnAlterar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAlterar.Image = ((System.Drawing.Image)(resources.GetObject("btnAlterar.Image")));
+            this.btnAlterar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnAlterar.Location = new System.Drawing.Point(168, 12);
+            this.btnAlterar.Name = "btnAlterar";
+            this.btnAlterar.Size = new System.Drawing.Size(68, 68);
+            this.btnAlterar.TabIndex = 2;
+            this.btnAlterar.Text = "Alterar";
+            this.btnAlterar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnAlterar.UseVisualStyleBackColor = true;
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
-            // btLocalizar
+            // btnLocalizar
             // 
-            this.btLocalizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btLocalizar.Image = ((System.Drawing.Image)(resources.GetObject("btLocalizar.Image")));
-            this.btLocalizar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btLocalizar.Location = new System.Drawing.Point(94, 12);
-            this.btLocalizar.Name = "btLocalizar";
-            this.btLocalizar.Size = new System.Drawing.Size(68, 68);
-            this.btLocalizar.TabIndex = 1;
-            this.btLocalizar.Text = "Localizar";
-            this.btLocalizar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btLocalizar.UseVisualStyleBackColor = true;
-            this.btLocalizar.Click += new System.EventHandler(this.btLocalizar_Click);
+            this.btnLocalizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLocalizar.Image = ((System.Drawing.Image)(resources.GetObject("btnLocalizar.Image")));
+            this.btnLocalizar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnLocalizar.Location = new System.Drawing.Point(94, 12);
+            this.btnLocalizar.Name = "btnLocalizar";
+            this.btnLocalizar.Size = new System.Drawing.Size(68, 68);
+            this.btnLocalizar.TabIndex = 1;
+            this.btnLocalizar.Text = "Localizar";
+            this.btnLocalizar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnLocalizar.UseVisualStyleBackColor = true;
+            this.btnLocalizar.Click += new System.EventHandler(this.btnLocalizar_Click);
             // 
-            // btInserir
+            // btnInserir
             // 
-            this.btInserir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btInserir.Image = ((System.Drawing.Image)(resources.GetObject("btInserir.Image")));
-            this.btInserir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btInserir.Location = new System.Drawing.Point(11, 12);
-            this.btInserir.Name = "btInserir";
-            this.btInserir.Size = new System.Drawing.Size(68, 68);
-            this.btInserir.TabIndex = 0;
-            this.btInserir.Text = "Inserir";
-            this.btInserir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btInserir.UseVisualStyleBackColor = true;
+            this.btnInserir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInserir.Image = ((System.Drawing.Image)(resources.GetObject("btnInserir.Image")));
+            this.btnInserir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnInserir.Location = new System.Drawing.Point(11, 12);
+            this.btnInserir.Name = "btnInserir";
+            this.btnInserir.Size = new System.Drawing.Size(68, 68);
+            this.btnInserir.TabIndex = 0;
+            this.btnInserir.Text = "Inserir";
+            this.btnInserir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnInserir.UseVisualStyleBackColor = true;
             // 
             // frmModeloCadastro
             // 
@@ -161,13 +162,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel pnDados;
-        private System.Windows.Forms.Panel pnBotoes;
-        private System.Windows.Forms.Button btCancelar;
-        private System.Windows.Forms.Button btSalvar;
-        private System.Windows.Forms.Button btExcluir;
-        private System.Windows.Forms.Button btAlterar;
-        private System.Windows.Forms.Button btLocalizar;
-        private System.Windows.Forms.Button btInserir;
+        protected System.Windows.Forms.Panel pnDados;
+        protected System.Windows.Forms.Panel pnBotoes;
+        protected System.Windows.Forms.Button btnCancelar;
+        protected System.Windows.Forms.Button btnSalvar;
+        protected System.Windows.Forms.Button btnExcluir;
+        protected System.Windows.Forms.Button btnAlterar;
+        protected System.Windows.Forms.Button btnLocalizar;
+        protected System.Windows.Forms.Button btnInserir;
     }
 }
