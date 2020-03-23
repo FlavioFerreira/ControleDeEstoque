@@ -8,6 +8,18 @@ namespace Modelo
 {
     public class ModeloCategoria
     {
+        public ModeloCategoria()
+        {
+            this.cat_cod = 0;
+            this.cat_nome = "";
+        }
+
+        public ModeloCategoria(int catcod, String nome)
+        {
+            this.cat_cod = catcod;
+            this.cat_nome = nome;
+        }
+
         private int cat_cod;
 
         public int Cat_cod
