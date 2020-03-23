@@ -55,6 +55,12 @@
     <Compile Include="Cadastros\Categoria\frmCadastroCategoria.Designer.cs">
       <DependentUpon>frmCadastroCategoria.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cadastros\Categoria\frmConsultaCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Categoria\frmConsultaCategoria.Designer.cs">
+      <DependentUpon>frmConsultaCategoria.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cadastros\Templates\frmModeloCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +77,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Cadastros\Categoria\frmCadastroCategoria.resx">
       <DependentUpon>frmCadastroCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Categoria\frmConsultaCategoria.resx">
+      <DependentUpon>frmConsultaCategoria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cadastros\Templates\frmModeloCadastro.resx">
       <DependentUpon>frmModeloCadastro.cs</DependentUpon>
@@ -121,6 +130,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\inserir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\localizar32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

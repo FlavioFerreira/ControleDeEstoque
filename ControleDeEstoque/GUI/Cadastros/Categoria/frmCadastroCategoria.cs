@@ -77,5 +77,53 @@ namespace GUI.Cadastros.Categoria
                 MessageBox.Show(erro.Message);
             }
         }
+
+        private void btnAlterar_Click(object sender, EventArgs e)
+        {
+            this.operacao = "alterar";
+            this.alteraBotoes(2);
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DialogResult d = MessageBox.Show("Deseja realmente Excluir o registro?", "Aviso", MessageBoxButtons.YesNo);
+                if(d.ToString() == "Yes")
+                {
+                    DALConexao cx = new DALConexao(DadosDaConexao.StringDeConexao);
+                    BLLCategoria bll = new BLLCategoria(cx);
+                    bll.Excluir(Convert.ToInt32(txtCodigo.Text));
+                    this.LimpaTela();
+                    this.alteraBotoes(1);
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Impossível excluir o registro. \n O registro está sendo utilizado em outro local.");
+                this.alteraBotoes(3);
+            }
+        }
+
+        private void btnLocalizar_Click(object sender, EventArgs e)
+        {
+            frmConsultaCategoria f = new frmConsultaCategoria();
+            f.ShowDialog();
+            if(f.codigo != 0)
+            {
+                DALConexao cx = new DALConexao(DadosDaConexao.StringDeConexao);
+                BLLCategoria bll = new BLLCategoria(cx);
+                ModeloCategoria modelo = bll.CarregaModeloCategoria(f.codigo);
+                txtCodigo.Text = modelo.Cat_cod.ToString();
+                txtNome.Text = modelo.Cat_nome;
+                alteraBotoes(3);
+            }
+            else
+            {
+                this.LimpaTela();
+                this.alteraBotoes(1);
+            }
+            f.Dispose();
+        }
     }
 }
