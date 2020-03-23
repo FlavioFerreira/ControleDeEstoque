@@ -103,6 +103,7 @@
             this.btnSubcategoria.Name = "btnSubcategoria";
             this.btnSubcategoria.SmallImage = ((System.Drawing.Image)(resources.GetObject("btnSubcategoria.SmallImage")));
             this.btnSubcategoria.Text = "Sub-Categoria";
+            this.btnSubcategoria.Click += new System.EventHandler(this.btnSubcategoria_Click);
             // 
             // btnUnidadeMedida
             // 

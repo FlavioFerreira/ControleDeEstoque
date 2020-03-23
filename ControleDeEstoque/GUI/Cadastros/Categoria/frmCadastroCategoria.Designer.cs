@@ -89,9 +89,9 @@
             this.Nome.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Nome.Location = new System.Drawing.Point(8, 87);
             this.Nome.Name = "Nome";
-            this.Nome.Size = new System.Drawing.Size(38, 15);
+            this.Nome.Size = new System.Drawing.Size(111, 15);
             this.Nome.TabIndex = 1;
-            this.Nome.Text = "Nome";
+            this.Nome.Text = "Nome da Categoria";
             // 
             // txtCodigo
             // 

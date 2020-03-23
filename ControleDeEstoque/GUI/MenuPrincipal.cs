@@ -1,4 +1,5 @@
 ﻿using GUI.Cadastros.Categoria;
+using GUI.Cadastros.Subcategoria;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -24,6 +25,13 @@ namespace GUI
             f.ShowDialog();
             f.Dispose();
 
+        }
+
+        private void btnSubcategoria_Click(object sender, EventArgs e)
+        {
+            frmCadastroSubCategoria f = new frmCadastroSubCategoria();
+            f.ShowDialog();
+            f.Dispose();
         }
     }
 }
