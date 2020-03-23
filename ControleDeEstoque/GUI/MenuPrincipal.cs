@@ -33,5 +33,19 @@ namespace GUI
             f.ShowDialog();
             f.Dispose();
         }
+
+        private void btnConsultaCategoria_Click(object sender, EventArgs e)
+        {
+            frmConsultaCategoria f = new frmConsultaCategoria();
+            f.ShowDialog();
+            f.Dispose();
+        }
+
+        private void btnConsultaSubCategoria_Click(object sender, EventArgs e)
+        {
+            frmConsultaSubCategoria f = new frmConsultaSubCategoria();
+            f.ShowDialog();
+            f.Dispose();
+        }
     }
 }

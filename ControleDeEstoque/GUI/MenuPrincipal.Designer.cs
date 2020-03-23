@@ -44,6 +44,9 @@
             this.abaRelatorios = new System.Windows.Forms.RibbonTab();
             this.abaFerramentas = new System.Windows.Forms.RibbonTab();
             this.abaSobre = new System.Windows.Forms.RibbonTab();
+            this.ribbonPanel3 = new System.Windows.Forms.RibbonPanel();
+            this.btnConsultaCategoria = new System.Windows.Forms.RibbonButton();
+            this.btnConsultaSubCategoria = new System.Windows.Forms.RibbonButton();
             this.SuspendLayout();
             // 
             // ribbon1
@@ -147,6 +150,7 @@
             // abaConsultas
             // 
             this.abaConsultas.Name = "abaConsultas";
+            this.abaConsultas.Panels.Add(this.ribbonPanel3);
             this.abaConsultas.Text = "Consultas";
             // 
             // abaMovimentacao
@@ -168,6 +172,32 @@
             // 
             this.abaSobre.Name = "abaSobre";
             this.abaSobre.Text = "Sobre";
+            // 
+            // ribbonPanel3
+            // 
+            this.ribbonPanel3.Items.Add(this.btnConsultaCategoria);
+            this.ribbonPanel3.Items.Add(this.btnConsultaSubCategoria);
+            this.ribbonPanel3.Name = "ribbonPanel3";
+            this.ribbonPanel3.Text = "Consultas";
+            // 
+            // btnConsultaCategoria
+            // 
+            this.btnConsultaCategoria.Image = ((System.Drawing.Image)(resources.GetObject("btnConsultaCategoria.Image")));
+            this.btnConsultaCategoria.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnConsultaCategoria.LargeImage")));
+            this.btnConsultaCategoria.Name = "btnConsultaCategoria";
+            this.btnConsultaCategoria.SmallImage = ((System.Drawing.Image)(resources.GetObject("btnConsultaCategoria.SmallImage")));
+            this.btnConsultaCategoria.Text = "Categoria";
+            this.btnConsultaCategoria.TextAlignment = System.Windows.Forms.RibbonItem.RibbonItemTextAlignment.Center;
+            this.btnConsultaCategoria.Click += new System.EventHandler(this.btnConsultaCategoria_Click);
+            // 
+            // btnConsultaSubCategoria
+            // 
+            this.btnConsultaSubCategoria.Image = ((System.Drawing.Image)(resources.GetObject("btnConsultaSubCategoria.Image")));
+            this.btnConsultaSubCategoria.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnConsultaSubCategoria.LargeImage")));
+            this.btnConsultaSubCategoria.Name = "btnConsultaSubCategoria";
+            this.btnConsultaSubCategoria.SmallImage = ((System.Drawing.Image)(resources.GetObject("btnConsultaSubCategoria.SmallImage")));
+            this.btnConsultaSubCategoria.Text = "Sub-Categoria";
+            this.btnConsultaSubCategoria.Click += new System.EventHandler(this.btnConsultaSubCategoria_Click);
             // 
             // MenuPrincipal
             // 
@@ -200,6 +230,9 @@
         private System.Windows.Forms.RibbonPanel ribbonPanel2;
         private System.Windows.Forms.RibbonButton btnClientes;
         private System.Windows.Forms.RibbonButton btnFornecedores;
+        private System.Windows.Forms.RibbonPanel ribbonPanel3;
+        private System.Windows.Forms.RibbonButton btnConsultaCategoria;
+        private System.Windows.Forms.RibbonButton btnConsultaSubCategoria;
     }
 }
 
