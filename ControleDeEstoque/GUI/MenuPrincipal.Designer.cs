@@ -43,6 +43,7 @@
             this.ribbonPanel3 = new System.Windows.Forms.RibbonPanel();
             this.btnConsultaCategoria = new System.Windows.Forms.RibbonButton();
             this.btnConsultaSubCategoria = new System.Windows.Forms.RibbonButton();
+            this.btnConsultaUnidadeMedida = new System.Windows.Forms.RibbonButton();
             this.abaMovimentacao = new System.Windows.Forms.RibbonTab();
             this.abaRelatorios = new System.Windows.Forms.RibbonTab();
             this.abaFerramentas = new System.Windows.Forms.RibbonTab();
@@ -115,6 +116,7 @@
             this.btnUnidadeMedida.Name = "btnUnidadeMedida";
             this.btnUnidadeMedida.SmallImage = ((System.Drawing.Image)(resources.GetObject("btnUnidadeMedida.SmallImage")));
             this.btnUnidadeMedida.Text = "Unidade de Medida";
+            this.btnUnidadeMedida.Click += new System.EventHandler(this.btnUnidadeMedida_Click);
             // 
             // btnProdutos
             // 
@@ -157,6 +159,7 @@
             // 
             this.ribbonPanel3.Items.Add(this.btnConsultaCategoria);
             this.ribbonPanel3.Items.Add(this.btnConsultaSubCategoria);
+            this.ribbonPanel3.Items.Add(this.btnConsultaUnidadeMedida);
             this.ribbonPanel3.Name = "ribbonPanel3";
             this.ribbonPanel3.Text = "Consultas";
             // 
@@ -178,6 +181,15 @@
             this.btnConsultaSubCategoria.SmallImage = ((System.Drawing.Image)(resources.GetObject("btnConsultaSubCategoria.SmallImage")));
             this.btnConsultaSubCategoria.Text = "Sub-Categoria";
             this.btnConsultaSubCategoria.Click += new System.EventHandler(this.btnConsultaSubCategoria_Click);
+            // 
+            // btnConsultaUnidadeMedida
+            // 
+            this.btnConsultaUnidadeMedida.Image = ((System.Drawing.Image)(resources.GetObject("btnConsultaUnidadeMedida.Image")));
+            this.btnConsultaUnidadeMedida.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnConsultaUnidadeMedida.LargeImage")));
+            this.btnConsultaUnidadeMedida.Name = "btnConsultaUnidadeMedida";
+            this.btnConsultaUnidadeMedida.SmallImage = ((System.Drawing.Image)(resources.GetObject("btnConsultaUnidadeMedida.SmallImage")));
+            this.btnConsultaUnidadeMedida.Text = "Unidade de Medida";
+            this.btnConsultaUnidadeMedida.Click += new System.EventHandler(this.btnConsultaUnidadeMedida_Click);
             // 
             // abaMovimentacao
             // 
@@ -203,12 +215,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(984, 562);
             this.Controls.Add(this.ribbon1);
             this.KeyPreview = true;
             this.Name = "MenuPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sistema de Controle de Estoque";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 
         }
@@ -233,6 +247,7 @@
         private System.Windows.Forms.RibbonPanel ribbonPanel3;
         private System.Windows.Forms.RibbonButton btnConsultaCategoria;
         private System.Windows.Forms.RibbonButton btnConsultaSubCategoria;
+        private System.Windows.Forms.RibbonButton btnConsultaUnidadeMedida;
     }
 }
 

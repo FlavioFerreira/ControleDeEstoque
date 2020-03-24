@@ -1,5 +1,6 @@
 ﻿using GUI.Cadastros.Categoria;
 using GUI.Cadastros.Subcategoria;
+using GUI.Cadastros.Unidade_de_Medida;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -44,6 +45,20 @@ namespace GUI
         private void btnConsultaSubCategoria_Click(object sender, EventArgs e)
         {
             frmConsultaSubCategoria f = new frmConsultaSubCategoria();
+            f.ShowDialog();
+            f.Dispose();
+        }
+
+        private void btnUnidadeMedida_Click(object sender, EventArgs e)
+        {
+            frmCadastroUnidadeDeMedida f = new frmCadastroUnidadeDeMedida();
+            f.ShowDialog();
+            f.Dispose();
+        }
+
+        private void btnConsultaUnidadeMedida_Click(object sender, EventArgs e)
+        {
+            frmConsultaUnidadeDeMedida f = new frmConsultaUnidadeDeMedida();
             f.ShowDialog();
             f.Dispose();
         }
