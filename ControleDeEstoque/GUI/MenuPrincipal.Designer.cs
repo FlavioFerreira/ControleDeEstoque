@@ -40,13 +40,13 @@
             this.btnClientes = new System.Windows.Forms.RibbonButton();
             this.btnFornecedores = new System.Windows.Forms.RibbonButton();
             this.abaConsultas = new System.Windows.Forms.RibbonTab();
+            this.ribbonPanel3 = new System.Windows.Forms.RibbonPanel();
+            this.btnConsultaCategoria = new System.Windows.Forms.RibbonButton();
+            this.btnConsultaSubCategoria = new System.Windows.Forms.RibbonButton();
             this.abaMovimentacao = new System.Windows.Forms.RibbonTab();
             this.abaRelatorios = new System.Windows.Forms.RibbonTab();
             this.abaFerramentas = new System.Windows.Forms.RibbonTab();
             this.abaSobre = new System.Windows.Forms.RibbonTab();
-            this.ribbonPanel3 = new System.Windows.Forms.RibbonPanel();
-            this.btnConsultaCategoria = new System.Windows.Forms.RibbonButton();
-            this.btnConsultaSubCategoria = new System.Windows.Forms.RibbonButton();
             this.SuspendLayout();
             // 
             // ribbon1
@@ -64,7 +64,7 @@
             this.ribbon1.OrbDropDown.Size = new System.Drawing.Size(527, 447);
             this.ribbon1.OrbDropDown.TabIndex = 0;
             this.ribbon1.RibbonTabFont = new System.Drawing.Font("Trebuchet MS", 9F);
-            this.ribbon1.Size = new System.Drawing.Size(984, 191);
+            this.ribbon1.Size = new System.Drawing.Size(984, 173);
             this.ribbon1.TabIndex = 0;
             this.ribbon1.Tabs.Add(this.abaCadastros);
             this.ribbon1.Tabs.Add(this.abaConsultas);
@@ -153,26 +153,6 @@
             this.abaConsultas.Panels.Add(this.ribbonPanel3);
             this.abaConsultas.Text = "Consultas";
             // 
-            // abaMovimentacao
-            // 
-            this.abaMovimentacao.Name = "abaMovimentacao";
-            this.abaMovimentacao.Text = "Movimentação";
-            // 
-            // abaRelatorios
-            // 
-            this.abaRelatorios.Name = "abaRelatorios";
-            this.abaRelatorios.Text = "Relatórios";
-            // 
-            // abaFerramentas
-            // 
-            this.abaFerramentas.Name = "abaFerramentas";
-            this.abaFerramentas.Text = "Ferramentas";
-            // 
-            // abaSobre
-            // 
-            this.abaSobre.Name = "abaSobre";
-            this.abaSobre.Text = "Sobre";
-            // 
             // ribbonPanel3
             // 
             this.ribbonPanel3.Items.Add(this.btnConsultaCategoria);
@@ -198,6 +178,26 @@
             this.btnConsultaSubCategoria.SmallImage = ((System.Drawing.Image)(resources.GetObject("btnConsultaSubCategoria.SmallImage")));
             this.btnConsultaSubCategoria.Text = "Sub-Categoria";
             this.btnConsultaSubCategoria.Click += new System.EventHandler(this.btnConsultaSubCategoria_Click);
+            // 
+            // abaMovimentacao
+            // 
+            this.abaMovimentacao.Name = "abaMovimentacao";
+            this.abaMovimentacao.Text = "Movimentação";
+            // 
+            // abaRelatorios
+            // 
+            this.abaRelatorios.Name = "abaRelatorios";
+            this.abaRelatorios.Text = "Relatórios";
+            // 
+            // abaFerramentas
+            // 
+            this.abaFerramentas.Name = "abaFerramentas";
+            this.abaFerramentas.Text = "Ferramentas";
+            // 
+            // abaSobre
+            // 
+            this.abaSobre.Name = "abaSobre";
+            this.abaSobre.Text = "Sobre";
             // 
             // MenuPrincipal
             // 

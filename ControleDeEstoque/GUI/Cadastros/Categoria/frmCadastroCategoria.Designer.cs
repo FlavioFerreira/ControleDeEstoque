@@ -118,7 +118,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(784, 562);
             this.Name = "frmCadastroCategoria";
-            this.Text = "Cadastro de Categoria";
+            this.Text = "Cadastro Categoria";
             this.Load += new System.EventHandler(this.frmCadastroCategoria_Load);
             this.pnDados.ResumeLayout(false);
             this.pnDados.PerformLayout();
