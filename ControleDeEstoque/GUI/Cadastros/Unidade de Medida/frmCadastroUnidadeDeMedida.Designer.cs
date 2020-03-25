@@ -105,6 +105,7 @@
             this.txtUnidadeMedida.Size = new System.Drawing.Size(357, 22);
             this.txtUnidadeMedida.TabIndex = 3;
             this.txtUnidadeMedida.TextChanged += new System.EventHandler(this.txtUnidadeMedida_TextChanged);
+            this.txtUnidadeMedida.Leave += new System.EventHandler(this.txtUnidadeMedida_Leave);
             // 
             // frmCadastroUnidadeDeMedida
             // 

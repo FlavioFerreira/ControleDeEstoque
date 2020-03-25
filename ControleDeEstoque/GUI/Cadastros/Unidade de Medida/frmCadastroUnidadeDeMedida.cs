@@ -123,5 +123,29 @@ namespace GUI.Cadastros.Unidade_de_Medida
             f.Dispose();
             
         }
+
+        private void txtUnidadeMedida_Leave(object sender, EventArgs e)
+        {
+            if(this.operacao == "inserir")
+            {
+                int r = 0;
+                DALConexao cx = new DALConexao(DadosDaConexao.StringDeConexao);
+                BLLUnidadeDeMedida bll = new BLLUnidadeDeMedida(cx);
+                r = bll.VerificaUnidadeDeMedida(txtUnidadeMedida.Text);
+
+                if(r > 0)
+                {
+                    DialogResult d = MessageBox.Show("Já existe um registro com este valor. Deseja realmente Alterar o registro?", "Aviso", MessageBoxButtons.YesNo);
+                    if (d.ToString() == "Yes")
+                    {
+                        this.operacao = "alterar";
+                        
+                        ModeloUnidadeDeMedida modelo = bll.CarregaModeloUnidadeDeMedida(r);
+                        txtCod.Text = modelo.Umedcod.ToString();
+                        txtUnidadeMedida.Text = modelo.Umednome;
+                        //alteraBotoes(3);
+                    }
+            }
+        }
     }
 }

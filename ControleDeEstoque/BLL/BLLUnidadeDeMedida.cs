@@ -62,6 +62,12 @@ namespace BLL
             return DAOObj.Localizar(valor);
         }
 
+        public int VerificaUnidadeDeMedida(String valor)
+        {
+            DALUnidadeDeMedida DAOObj = new DALUnidadeDeMedida(conexao);
+            return DAOObj.VerificaUnidadeDeMedida(valor);
+        }
+
         public ModeloUnidadeDeMedida CarregaModeloUnidadeDeMedida(int codigo)
         {
             DALUnidadeDeMedida DAOObj = new DALUnidadeDeMedida(conexao);
