@@ -133,18 +133,19 @@ namespace GUI.Cadastros.Unidade_de_Medida
                 BLLUnidadeDeMedida bll = new BLLUnidadeDeMedida(cx);
                 r = bll.VerificaUnidadeDeMedida(txtUnidadeMedida.Text);
 
-                if(r > 0)
+                if (r > 0)
                 {
                     DialogResult d = MessageBox.Show("Já existe um registro com este valor. Deseja realmente Alterar o registro?", "Aviso", MessageBoxButtons.YesNo);
                     if (d.ToString() == "Yes")
                     {
                         this.operacao = "alterar";
-                        
+
                         ModeloUnidadeDeMedida modelo = bll.CarregaModeloUnidadeDeMedida(r);
                         txtCod.Text = modelo.Umedcod.ToString();
                         txtUnidadeMedida.Text = modelo.Umednome;
                         //alteraBotoes(3);
                     }
+                }
             }
         }
     }
