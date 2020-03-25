@@ -42,6 +42,7 @@
             // 
             // pnDados
             // 
+            this.pnDados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pnDados.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnDados.Location = new System.Drawing.Point(13, 12);
             this.pnDados.Name = "pnDados";
@@ -149,6 +150,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(784, 562);
             this.Controls.Add(this.pnBotoes);
             this.Controls.Add(this.pnDados);
