@@ -10,38 +10,38 @@ namespace Modelo
     {
         public ModeloProduto()
         {
-            this.pro_cod = 0;
-            this.pro_nome = "";
-            this.pro_descricao = "";
-            this.pro_foto = "";
-            this.pro_valorpago = 0;
-            this.pro_valorvenda = 0;
-            this.pro_qtde = 0;
-            this.umed_cod = 0;
-            this.cat_cod = 0;
-            this.scat_cod = 0;
+            this.ProCod = 0;
+            this.ProNome = "";
+            this.ProDescricao = "";
+            this.ProFoto = "";
+            this.ProValorpago = 0;
+            this.ProValorvenda = 0;
+            this.ProQtde = 0;
+            this.UmedCod = 0;
+            this.CatCod = 0;
+            this.ScatCod = 0;
 
         }
 
         public ModeloProduto(int pro_cod, String pro_nome, String pro_descricao, String pro_foto, Double pro_valorpago, Double pro_valorvenda, float pro_qtde, int umed_cod, int cat_cod, int scat_cod)
         {
-            this.pro_cod = pro_cod;
-            this.pro_nome = pro_nome;
-            this.pro_descricao = pro_descricao;
-            this.pro_foto = pro_foto;
-            this.pro_valorpago = pro_valorpago;
-            this.pro_valorvenda = pro_valorvenda;
-            this.pro_qtde = pro_qtde;
-            this.umed_cod = umed_cod;
-            this.cat_cod = cat_cod;
-            this.scat_cod = scat_cod;
+            this.ProCod = pro_cod;
+            this.ProNome = pro_nome;
+            this.ProDescricao = pro_descricao;
+            this.ProFoto = pro_foto;
+            this.ProValorpago = pro_valorpago;
+            this.ProValorvenda = pro_valorvenda;
+            this.ProQtde = pro_qtde;
+            this.UmedCod = umed_cod;
+            this.CatCod = cat_cod;
+            this.ScatCod = scat_cod;
 
 
         }
 
         private int _pro_cod;
 
-        public int pro_cod
+        public int ProCod
         {
             get { return this._pro_cod; }
             set { this._pro_cod = value; }
@@ -49,7 +49,7 @@ namespace Modelo
 
         private String _pro_nome;
 
-        public String pro_nome
+        public String ProNome
         {
             get { return this._pro_nome; }
             set { this._pro_nome = value; }
@@ -57,7 +57,7 @@ namespace Modelo
 
         private String _pro_descricao;
 
-        public String pro_descricao
+        public String ProDescricao
         {
             get { return this._pro_descricao; }
             set { this._pro_descricao = value; }
@@ -65,7 +65,7 @@ namespace Modelo
 
         private String _pro_foto;
 
-        private String pro_foto
+        private String ProFoto
         {
             get { return this._pro_foto; }
             set { this._pro_foto = value; }
@@ -73,7 +73,7 @@ namespace Modelo
 
         private Double _pro_valorpago;
 
-        public Double pro_valorpago
+        public Double ProValorpago
         {
             get { return this._pro_valorpago; }
             set { this._pro_valorpago = value; }
@@ -81,7 +81,7 @@ namespace Modelo
 
         private Double _pro_valorvenda;
 
-        public Double pro_valorvenda
+        public Double ProValorvenda
         {
             get { return this._pro_valorvenda; }
             set { this._pro_valorvenda = value;}
@@ -89,7 +89,7 @@ namespace Modelo
 
         private float _pro_qtde;
 
-        public float pro_qtde
+        public float ProQtde
         {
             get { return this._pro_qtde; }
             set { this._pro_qtde = value;}
@@ -97,7 +97,7 @@ namespace Modelo
 
         private int _umed_cod;
 
-        public int umed_cod
+        public int UmedCod
         {
             get { return this._umed_cod; }
             set { this._umed_cod = value; }
@@ -105,7 +105,7 @@ namespace Modelo
 
         private int _cat_cod;
 
-        public int cat_cod
+        public int CatCod
         {
             get { return this._cat_cod; }
             set { this._cat_cod = value; }
@@ -113,7 +113,7 @@ namespace Modelo
 
         private int _scat_cod;
 
-        public int scat_cod
+        public int ScatCod
         {
             get { return this._scat_cod; }
             set { this._scat_cod = value; }
