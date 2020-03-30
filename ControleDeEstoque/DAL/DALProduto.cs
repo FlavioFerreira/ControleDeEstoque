@@ -47,5 +47,45 @@ namespace DAL
 
         }
 
+        public void Excluir(int codigo)
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = conexao.ObjetoConexao;
+            cmd.CommandText = "delete from Produto where (pro_cod) = (@codigo)";
+            cmd.Parameters.AddWithValue("@codigo", codigo);
+            conexao.Conectar();
+            cmd.ExecuteNonQuery();
+            conexao.Desconectar();
+        }
+
+        public void Alterar(ModeloProduto obj)
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = conexao.ObjetoConexao;
+            cmd.CommandText = "update Produto set pro_nome = (@nome), pro_descricao = (@descricao), pro_foto = (@foto), pro_valorpago = (@valorpago), pro_valorvenda = (@valorvenda), pro_qtde = (@qtde), undmed_cod = (@undmedcod), cat_cod = (@catcod), scat_cod = (@scatcod) where pro_cod = @codigo;";
+            cmd.Parameters.AddWithValue("@nome", obj.ProNome);
+            cmd.Parameters.AddWithValue("@descricao", obj.ProDescricao);
+            cmd.Parameters.Add("@foto", System.Data.SqlDbType.Image);
+            if (obj.ProFoto == null)
+            {
+                cmd.Parameters["@foto"].Value = DBNull.Value;
+            }
+            else
+            {
+                cmd.Parameters["@foto"].Value = obj.ProFoto;
+            }
+            cmd.Parameters.AddWithValue("@valorpago", obj.ProValorpago);
+            cmd.Parameters.AddWithValue("@valorvenda", obj.ProValorvenda);
+            cmd.Parameters.AddWithValue("@qtde", obj.ProQtde);
+            cmd.Parameters.AddWithValue("@undmedcod", obj.UmedCod);
+            cmd.Parameters.AddWithValue("@catcod", obj.CatCod);
+            cmd.Parameters.AddWithValue("@scatcod", obj.ScatCod);
+
+            conexao.Conectar();
+
+            cmd.ExecuteNonQuery();
+
+            conexao.Desconectar();
+        }
     }
 }
